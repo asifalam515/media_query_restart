@@ -1,11 +1,85 @@
 * {
   box-sizing: border-box;
+  /* color: white; */
+}
+/* common styles for all  */
+/* navbar styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav a {
+  text-decoration: none;
+  padding: 5px;
+}
+.nav-text {
+  color: #ff7e40;
+}
+.nav-left {
+  display: flex;
 }
 
-/* for 600 px or less mobile view */
-@media only screen and (max-width: 600px) {
+.header {
+  background-image: url("./Images/Group\ 13\ \(1\)\ \(1\).png");
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  /* color: ; */
+  text-align: center;
 }
 
+.input-container {
+  position: relative;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  width: 100vw;
+  margin: 0px 5px 5px 20px;
+}
+
+.input-container input {
+  /* width: 100%; */
+  padding: 10px;
+  padding-right: 30px; /* Extra space for the icon */
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.input-container i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  /* color: #f81b1b; */
+  pointer-events: none;
+}
+.find-btn {
+  padding: 10px;
+  background-color: #ff5400;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: black;
+}
+/* ---------------------------------------------------------------------------------------- */
 /* for 992 px and more laptop view */
 @media only screen and (min-width: 992px) {
+  /* navbar */
+  .nav-sign {
+    display: none;
+  }
+}
+
+/* ----------------------------------------------------------------------------------------- */
+/* for 600 px or less mobile view */
+@media only screen and (max-width: 600px) {
+  .nav-item {
+    display: none;
+  }
+  .nav-sign {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  }
 }
