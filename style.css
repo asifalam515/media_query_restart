@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+/* for 600 px or less mobile view */
+@media only screen and (max-width: 600px) {
+}
+
+/* for 992 px and more laptop view */
+@media only screen and (min-width: 992px) {
+}
