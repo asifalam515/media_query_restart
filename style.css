@@ -1,5 +1,9 @@
 * {
   box-sizing: border-box;
+  /* margin: 0; */
+  padding: 0;
+  /* overflow-x: hidden; */
+
   /* color: white; */
 }
 /* common styles for all  */
@@ -11,7 +15,7 @@
 }
 nav a {
   text-decoration: none;
-  padding: 5px;
+  margin: 2px;
 }
 .nav-text {
   color: #ff7e40;
@@ -25,10 +29,13 @@ nav a {
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
-  /* color: ; */
+
   text-align: center;
 }
-
+header {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 .input-container {
   position: relative;
   display: flex;
@@ -62,6 +69,20 @@ nav a {
   border-radius: 5px;
   color: black;
 }
+
+/* ..............popular tour........... */
+.popular-tour {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.read-btn {
+  padding: 10px;
+  border-radius: 15%;
+  background-color: #ff5400;
+  color: #ffeadf;
+  border: 1px solid white;
+}
 /* ---------------------------------------------------------------------------------------- */
 /* for 992 px and more laptop view */
 @media only screen and (min-width: 992px) {
@@ -81,5 +102,26 @@ nav a {
     display: flex;
     flex-direction: column;
     margin: 0px;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    /* height: 80%;
+    width: 80%; */
+  }
+  .header-text {
+    display: grid;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .input-container {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  /* ...........popular tour section */
+  .popular-tour {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* gap: 10px; */
   }
 }
