@@ -83,6 +83,61 @@ header {
   color: #ffeadf;
   border: 1px solid white;
 }
+
+/* cards ......................... */
+.destination-description {
+  text-align: center;
+}
+/* upper card-------------------- */
+.upper-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 5px;
+}
+/* middle card */
+.middle-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+/* lower card */
+.lower-card {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 10px;
+}
+.last-item {
+  width: 674px;
+  height: 300px;
+}
+.second-last-item {
+  width: 473px;
+  height: 300px;
+}
+
+/* why choose us */
+.choose-us-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+}
+.card1,
+.card2,
+.card3 {
+  border: 2px solid gray;
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #fffbf7;
+}
+.card3 {
+  justify-self: center;
+  align-self: center;
+  grid-column: span 2;
+}
 /* ---------------------------------------------------------------------------------------- */
 /* for 992 px and more laptop view */
 @media only screen and (min-width: 992px) {
@@ -123,5 +178,35 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     /* gap: 10px; */
+  }
+
+  /* choose your destination */
+  .upper-card {
+    display: flex;
+    flex-direction: column;
+    margin: 0.125em;
+  }
+
+  .lower-card {
+    display: flex;
+    flex-direction: column;
+    margin: 0.125em;
+  }
+  .middle-card {
+    display: flex;
+    flex-direction: column;
+    margin: 0.313em;
+  }
+  .upper-card img {
+    width: 20.938 em;
+    height: 11em;
+  }
+  .middle-card img {
+    width: 20.938 em;
+    height: 11em;
+  }
+  .lower-card img {
+    width: 20.938 rem;
+    height: 11rem;
   }
 }
